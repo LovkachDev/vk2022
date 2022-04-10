@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*,
+    *::before,
+    *::after 
+{
+      box-sizing: border-box;
+}
+h1
+{
+    margin:0px;
+}
+a
+{
+    text-decoration: none;
+}
+body
+{
+    padding: 0;
+    margin: 0;
+    width:100%;
+    background-color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+.wrapper
+{
+    position: absolute;
+    width:100%;
+}
+.container
+{
+    position: relative;
+    margin:auto;
+    max-width: 1200px;
+}
+.flex
+{
+    display:flex;
+}
+.jcc
+{
+    justify-content: center;
+}
+.jce
+{
+    justify-content: end;
+}
+.aic
+{
+    align-items: center;
+}
+header{
+    width: 100%;
+    background: #0077FF;
+}
+.header__title
+{
+    padding: 21px;
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 43px;
+    color: #FFFFFF;
+}
+.sell__area
+{
+    position: relative;
+    top:64px;
+    width: 100%;
+    background: #F6F6F6;
+    border-radius: 10px;
+    padding: 21px 28px;
+}
+.sell__info
+{
+    width: 40%;
+    flex-direction: column;
+}
+.sell__title
+{
+    font-weight: 600;
+    font-size: 27px;
+    line-height: 33px;
+    color: rgba(0, 0, 0, 0.7);
+}
+.sell__price
+{
+    margin:27px 0px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: rgba(0, 0, 0, 0.7);    
+}
+.strong
+{
+    font-weight: 500;
+}
+.sell__description
+{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 35px;
+    color: rgba(0, 0, 0, 0.7);
+}
+.sell__form
+{
+    flex-direction: column;
+    width: max-content;
+}
+.sell__input
+{
+    padding: 15px 16px;
+    border: 2px solid #0077FF;
+    border-radius: 5px;
+}
+.sell__button
+{
+    width: 345px;
+    margin:9px 0px;
+    font-weight: 400;
+    font-size: 18px;
+    color: #FFFFFF;    
+    padding: 15px;
+    background: #0077FF;
+    border-radius: 5px;
+    border:none;
+}
+.sell__picture
+{
+    width: 60%;
+}
+.product__image
+{
+    width: 100%;
+    border-radius: 5px;
+}
+.sell__timer
+{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+}
+.end
+{
+    display: none;
+    z-index: 10;
+    position: fixed;
+    width: 100vw;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+.end__area
+{
+    padding: 65px 0px;
+    flex-direction: column;
+    width: 650px;
+    background: #FFFFFF;
+    border-radius: 5px;
+}
+.end__title
+{
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 61px;
+    color: #0077FF; 
+}
+.end__info
+{
+    margin-top:40px;
+    font-weight: 400;
+    font-size: 33px;
+    text-align: center;
+    color: #000000;
+}
+@media(max-width:1150px)
+{
+    .container{
+        max-width: 1000px;
+    }
+}
+@media(max-width:1000px)
+{
+    .container{
+        max-width: 760px;
+    }
+    .sell__area
+    {
+        flex-direction: column-reverse;
+    }
+    .sell__info , .sell__picture
+    {
+        width: 100%;
+    }
+    .sell__info
+    {
+        margin-top:50px;
+    }
+}
+@media(max-width:800px)
+{
+    .container{
+        max-width: 560px;
+    }
+    .end__area
+    {
+        width: 80%;
+    }
+    .end__title
+    {
+        font-size: 40px;
+    }
+    .end__info
+    {
+        font-size: 30px;
+    }
+}
+@media(max-width:600px)
+{
+    .container{
+        max-width: 420px;
+    }
+    .sell__title
+    {
+        font-size: 22px;
+    }
+    .sell__price
+    {
+        margin: 15px 0px;
+        font-size: 20px;
+    }
+    .sell__description
+    {
+        font-size: 17px;
+        line-height: 25px;
+    }
+    .header__title
+    {
+        font-size: 28px;
+    }
+    .sell__form,
+    .sell__button
+    {
+        width: 100%;
+    }
+    .sell__form
+    {
+        margin-top:35px;
+    }
+    .end__area
+    {
+        width: 95%;
+    }
+}
+@media(max-width:430px)
+{
+    .container{
+        max-width: 330px;
+    }
+    .end__area
+    {
+        width: 95%;
+    }
+    .end__title
+    {
+        font-size: 30px;
+    }
+    .end__info
+    {
+        font-size: 23px;
+    }
+}
